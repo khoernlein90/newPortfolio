@@ -177,6 +177,7 @@ h2::after {
 }
 .red {
   color: red;
+  font-weight: 400;
 }
 .green {
   color: rgb(21, 255, 0);
