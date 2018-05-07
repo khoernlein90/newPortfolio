@@ -38,9 +38,12 @@ header {
 a {
   color: white;
 }
-button.navbar-toggler {
-  /* color: white; */
-  background: white;
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+#bg-dark {
+  background-color: none !important;
 }
 .about-me {
   padding-bottom: 60px;
@@ -55,9 +58,10 @@ button.navbar-toggler {
 .main-info-box {
   position: absolute;
   color: #fff;
-  width: 1140px;
-  top: 40%;
-  left: 50%;
+  width: 500px;
+  top: 45%;
+  left: 30%;
+
   font-size: 120%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
