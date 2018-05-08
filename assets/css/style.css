@@ -95,7 +95,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 section {
-  padding: 56px 58px;
+  padding: 56px 58px 10px 58px;
 }
 .about-me h2 {
   margin-bottom: 20px;

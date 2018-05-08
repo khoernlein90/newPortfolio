@@ -11,6 +11,24 @@ $(document).ready(function() {
 
   const images = [
     {
+      imageName: "react-burger-builder",
+      img: "./assets/images/burger.png",
+      info:
+        "A React app that uses Google Firebase to store orders that a customer makes.",
+      githubLink: "",
+      deployedLink: "https://pacific-retreat-11922.herokuapp.com/",
+      technologies: ["React", "React Router", "JavaScript", "Firebase", "Axios"]
+    },
+    {
+      imageName: "react-youtube",
+      img: "./assets/images/youtube.png",
+      info:
+        "A React app that takes the user input and automatically searches the Youtube API whenever the user types.",
+      githubLink: "",
+      deployedLink: "",
+      technologies: ["React", "JavaScript", "Bootstrap", "Youtube API"]
+    },
+    {
       imageName: "giphy-movie-search",
       img: "./assets/images/giphy.png",
       info:
@@ -45,6 +63,23 @@ $(document).ready(function() {
       githubLink: "https://github.com/khoernlein90/CrystalCollector",
       deployedLink: "https://khoernlein90.github.io/CrystalCollector/",
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"]
+    },
+    {
+      imageName: "train-scheduler",
+      img: "./assets/images/train.png",
+      info:
+        "A web app where the user can schedule mock trains. The trains are timed and stored using Google Firebase.",
+      githubLink: "",
+      deployedLink: "",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Javascript",
+        "jQuery",
+        "Google",
+        "Firebase"
+      ]
     }
   ];
   for (let image of images) {
@@ -102,21 +137,10 @@ $(document).ready(function() {
     modalDiv.append(modalContent);
     $("body").append(modalDiv);
   }
-  var giphy = document.getElementById("giphy-movie-search");
-  var hangman = document.getElementById("hangman");
-  var crystalModal = document.getElementById("crystal-collector");
 
   $(document).on("click", ".the-image", function() {
     const modal = $(this).attr("data-modal");
-    if (modal === "giphy-movie-search") {
-      giphy.style.display = "block";
-    }
-    if (modal === "hangman") {
-      hangman.style.display = "block";
-    }
-    if (modal === "crystal-collector") {
-      crystalModal.style.display = "block";
-    }
+    document.getElementById(modal).style.display = "block";
   });
 
   $(window).on("click", function(event) {
@@ -137,6 +161,9 @@ $(document).ready(function() {
         $(".crystal-collector").addClass("animated bounceInRight");
         $(".giphy-movie-search").addClass("animated bounceInLeft");
         $(".hangman").addClass("animated bounceInDown");
+        $(".react-youtube").addClass("animated bounceInDown");
+        $(".react-burger-builder").addClass("animated bounceInDown");
+        $(".train-scheduler").addClass("animated bounceInLeft");
       },
       {
         offset: "-600px"
@@ -147,6 +174,9 @@ $(document).ready(function() {
       $(".crystal-collector").addClass("animated bounceInRight");
       $(".giphy-movie-search").addClass("animated bounceInLeft");
       $(".hangman").addClass("animated bounceInDown");
+      $(".react-youtube").addClass("animated bounceInDown");
+      $(".react-burger-builder").addClass("animated bounceInDown");
+      $(".train-scheduler").addClass("animated bounceInLeft");
     });
   }
 

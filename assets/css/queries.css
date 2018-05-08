@@ -39,7 +39,20 @@
   .nav-items {
     display: grid;
   }
+  .nav-items li:hover {
+    border-bottom: none;
+  }
+  .portfolio-image img {
+    margin-bottom: 14px;
+  }
+  section {
+    padding: 56px 0;
+  }
   .modal-body {
     display: block;
+  }
+  .modal-body p,
+  .modal-body ul {
+    padding: 20px 0;
   }
 }
