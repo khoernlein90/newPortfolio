@@ -34,6 +34,9 @@ header {
   -moz-box-shadow: -1px 8px 23px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 8px 23px -2px rgba(0, 0, 0, 0.75);
 }
+:focus {
+  outline: none;
+}
 nav {
   display: grid;
   text-align: center;
