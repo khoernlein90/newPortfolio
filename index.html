@@ -5,167 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kyle Hoernlein</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/queries.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-code"></i>
-                <span class="red">Kyle</span>Hoernlein
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto main-nav-links">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT ME</a>
+    <div class="container">
+        <header class="item">
+            <nav>
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-code"></i>
+                    <span class="first-name red">Kyle</span>Hoernlein
+                </a>
+                <ul class="nav-items">
+                    <li>
+                        <a href="#about-me">ABOUT ME</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">THING'S I'VE BUILT</a>
+                    <li>
+                        <a href="#my-apps">THINGS I'VE BUILT</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            CONTACT
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-
-                            <a class="dropdown-item" href="#">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
+                    <li>
+                        <a href="">CONTACT</a>
                     </li>
                 </ul>
+            </nav>
+            <div class="main-info-box">
+                <p>
+                    <span class="purple">const</span>
+                    <span class="red">fullStackDeveloper</span> = { </p>
+                <p class="one-indent">
+                    <span class="red">firstName</span>: "Kyle",</p>
+                <p class="one-indent">
+                    <span class="red">lastName</span>: "Hoernlein",</p>
+                <p class="one-indent">
+                    <span class="red">hobbies</span>: ["Coding", "Video Games"]</p>
+                <p>};</p>
             </div>
-        </nav>
-        <div class="main-info-box">
-            <!-- <h1>I <span class="biggerLetters">W</span>RITE JAVA<span class="biggerLetters">S</span>CRIPT.</h1> -->
-            <p>
-                <span class="purple">const</span>
-                <span class="red">fullStackDeveloper</span> = { </p>
-            <p class="one-indent">
-                <span class="red">firstName</span>: "Kyle",</p>
-            <p class="one-indent">
-                <span class="red">lastName</span>: "Hoernlein",</p>
-            <p class="one-indent">
-                <span class="red">hobbies</span>: ["Coding", "Video Games"]</p>
-            <!-- <p class="two-indent"></p> -->
-            <p>};</p>
-        </div>
-    </header>
-    <section class="about-me">
-        <div class="container" id="about-me">
+        </header>
+        <section class="about-me" id="about-me">
             <h2>A Little About Myself</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <p>I grew up in Old Bridge, New Jersey and I have lived in the same area for the majority of my life. I
-                        played a lot of sports while growing up which I think has attributed to my competitive nature. I
-                        really enjoy trying to push myself and learn new things.</p>
-                </div>
-                <div class="col-md-4">
-                    <p>I graduated from Montclair State University with a Bachelors in Justice Studies. I initially had plans
-                        to become a police officer, but after some soul searching I realized that wasn't the right path for
-                        me. This realization ultimately led me to the Rutgers Coding Bootcamp for Fullstack Web Development.</p>
-                </div>
-                <div class="col-md-4">
-                    <p>After graduating from the Rutgers Coding Bootcamp, I became a Teaching Assistant and a tutor for the
-                        bootcamp. I'm constantly trying to improve my skills and I really enjoy trying to learn new languages.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>I grew up in Old Bridge, New Jersey and I have lived in the same area for the majority of my life. I played a
+                lot of sports while growing up which I think has attributed to my competitive nature. I really enjoy trying
+                to push myself and learn new things.</p>
+            <p>I graduated from Montclair State University with a Bachelors in Justice Studies. I initially had plans to become
+                a police officer, but after some soul searching I realized that wasn't the right path for me. This realization
+                ultimately led me to the Rutgers Coding Bootcamp for Fullstack Web Development.</p>
+            <p>After graduating from the Rutgers Coding Bootcamp, I became a Teaching Assistant and a tutor for the bootcamp.
+                I'm constantly trying to improve my skills and I really enjoy trying to learn new languages.</p>
+        </section>
+        <section id="my-apps">
+            <h2>Cool things i've built</h2>
+            <div class="my-apps"></div>
+        </section>
 
-    <section class="my-apps">
-        <!-- <div class="container"> -->
-        <h2>Cool Things I've Built</h2>
-        <!-- </div> -->
-        <div class="row">
-            <div class="col-md-4 col-sm-12 image-col" data-image="Hangman">
-                <img class="app-image" data-image="Hangman" src="./assets/images/hangman.png" alt="">
-            </div>
-            <div class="col-md-4 col-sm-12 image-col">
-                <img class="app-image" src="./assets/images/giphy.png" alt="">
-            </div>
-            <div class="col-md-4  col-sm-12 image-col">
-                <img class="app-image" src="./assets/images/crystal.png" alt="">
-            </div>
-        </div>
-        <div class="row" id="image-row">
-            <div class="col-md-4  col-sm-12 image-col">
-                <img class="app-image" src="https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3860371df6121bd9176d5889b487c3e1&auto=format&fit=crop&w=1950&q=80"
-                    alt="">
-            </div>
-            <div class="col-md-4  col-sm-12 image-col">
-                <img class="app-image" src="https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3860371df6121bd9176d5889b487c3e1&auto=format&fit=crop&w=1950&q=80"
-                    alt="">
-            </div>
-            <div class="col-md-4  col-sm-12 image-col">
-                <img class="app-image" src="https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3860371df6121bd9176d5889b487c3e1&auto=format&fit=crop&w=1950&q=80"
-                    alt="">
-            </div>
-        </div>
-    </section>
+        <footer>
+            <ul class="footer-list">
+                <li>
+                    <a class="footer-icons" href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-icons" href="">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; 2018 Kyle Hoernlein. </p>
+        </footer>
+    </div>
+    <!-- <div class="modals"></div> -->
 
-    <footer>
-        <!-- <div class="container"> -->
-        <ul class="footer-list">
-            <li>
-                <a class="footer-icons" href="">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a class="footer-icons" href="">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="copyright">&copy; 2018 Kyle Hoernlein. </p>
 
-        <!-- </div> -->
-    </footer>
+    <!-- <button id="myBtn">Open Modal</button> -->
 
-    <div class="modal fade" id="hangmanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Hangman</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="modal-img" src="./assets/images/hangman.png" alt="">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+    <!-- <div id="giphyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Giphy</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/images/giphy.png" alt="">
+                <p>A web app which uses the Giphy API to search for movie GIFs (or any GIF for that matter). Entering a search
+                    term will add a new GIF button. Clicking on the GIFs will play/pause them! Enjoy! </p>
+            </div>
+            <div class="modal-footer">
+
             </div>
         </div>
     </div>
+    <div id="hangmanModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Hangman</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/images/hangman.png" alt="">
+                <p>A web app which uses the Giphy API to search for movie GIFs (or any GIF for that matter). Entering a search
+                    term will add a new GIF button. Clicking on the GIFs will play/pause them! Enjoy! </p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <div id="crystalModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Giphy</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/images/crystal.png" alt="">
+                <p>A web app which uses the Giphy API to search for movie GIFs (or any GIF for that matter). Entering a search
+                    term will add a new GIF button. Clicking on the GIFs will play/pause them! Enjoy! </p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div> -->
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
