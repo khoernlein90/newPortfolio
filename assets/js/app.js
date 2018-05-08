@@ -158,12 +158,12 @@ $(document).ready(function() {
   if ($(window).width() < 500) {
     $(".about-me").waypoint(
       function(dir) {
-        $(".crystal-collector").addClass("animated bounceInRight");
-        $(".giphy-movie-search").addClass("animated bounceInLeft");
+        $(".crystal-collector").addClass("animated bounceInUp");
+        $(".giphy-movie-search").addClass("animated bounceInRight");
         $(".hangman").addClass("animated bounceInDown");
         $(".react-youtube").addClass("animated bounceInDown");
-        $(".react-burger-builder").addClass("animated bounceInDown");
-        $(".train-scheduler").addClass("animated bounceInLeft");
+        $(".react-burger-builder").addClass("animated bounceInLeft");
+        $(".train-scheduler").addClass("animated bounceInRight");
       },
       {
         offset: "-600px"
@@ -171,12 +171,12 @@ $(document).ready(function() {
     );
   } else {
     $(".about-me").waypoint(function(dir) {
-      $(".crystal-collector").addClass("animated bounceInRight");
-      $(".giphy-movie-search").addClass("animated bounceInLeft");
-      $(".hangman").addClass("animated bounceInDown");
+      $(".crystal-collector").addClass("animated bounceInUp");
+      $(".giphy-movie-search").addClass("animated bounceInRight");
+      $(".hangman").addClass("animated bounceInLeft");
       $(".react-youtube").addClass("animated bounceInDown");
-      $(".react-burger-builder").addClass("animated bounceInDown");
-      $(".train-scheduler").addClass("animated bounceInLeft");
+      $(".react-burger-builder").addClass("animated bounceInLeft");
+      $(".train-scheduler").addClass("animated bounceInRight");
     });
   }
 
